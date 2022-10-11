@@ -1,8 +1,14 @@
 {
-  "watch": ["src"],
+  "watch": [
+    "src"
+  ],
   "ext": "ts,js,json",
-  "ignore": ["node_modules", "coverage", "dist"],
-  "exec": "ts-node ./src/index.ts",
+  "ignore": [
+    "node_modules",
+    "coverage",
+    "dist"
+  ],
+  "exec": "ts-node ./src/server.ts",
   "restartable": "rs",
   "env": {
     "NODE_ENV": "development"
