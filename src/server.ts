@@ -1,11 +1,4 @@
-import * as dotenv from "dotenv";
-import { WebSocketServer } from "ws";
-dotenv.config();
-const port = 7071;
-const runServer = (port: number) => {
-  const wss = new WebSocketServer({ port: port });
-  wss.on("connection", (ws) => {});
-};
+import { Game } from "./game";
 
-export { runServer };
-runServer(port);
+const game = new Game(7071, 8080);
+game.run();
